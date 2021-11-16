@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    Your Videos
+  </title>
+  <link rel="stylesheet" href="css/upload.css">
+  </link>
+</head>
+
+<body>
+  <style>
+
+  </style>
+  <div class="header">
+    <div class="menu-bar">
+      <nav class="navbar navbar-expand-lg navbar-light top-navbar fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="images/website-logo.jpeg" alt=""></a>
+          <!-- 
+                    <button id="myBtn">Upload Video</button>
+                -->
+          <input id="fileInput" type="file" style="display:none;" />
+          <input type="button" id="myBtn" value="Upload Video"
+            onclick="document.getElementById('fileInput').click();" />
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    </nav>
+  </div>
+  <div>
+    <h1>
+      Your Previously Uploaded Videos
+    </h1>
+  </div>
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <a href="https://youtu.be/L-9s4nTLSdA" target="_blank"><img src="images/video1.png" alt=""></a>
+          <img class="trash-bin" src="images/trash-bin.png" alt="">
+          <div class="card-body">
+            <p class="card-text">Madari - Clinton Cerejo feat Vishal Dadlani & Sonu Kakkar, Coke Studio @ MTV Season 2
+            </p>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <a href="https://youtu.be/8JT1JmTn3mo" target="_blank"><img src="images/video2.png" alt=""></a>
+            <img class="trash-bin" src="images/trash-bin.png" alt="">
+            <div class="card-body">
+              <p class="card-text">Gordon Ramsay Tries Sushi Pizza | Kitchen Nightmares FULL EPISODE</p>
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="https://youtu.be/GLk7-imcjiI" target="_blank"><img src="images/video3.png" alt=""></a>
+              <img class="trash-bin" src="images/trash-bin.png" alt="">
+              <div class="card-body">
+                <p class="card-text">Complete Roadmap for Web Development || Noob to Advanced || Web Developer 2020</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="javaScript/upload.js"></script>
+
+</body>
+
+</html>
